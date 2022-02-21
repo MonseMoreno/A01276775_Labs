@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+
+<html lang = "es"> 
+
+    <div id = "Contenido">
+        <head>
+            <meta charset="utf-8"/>
+            <link rel="stylesheet" href = "style.css"/>
+            <title> A01276775_Lab4 </title>
+            
+        </head>
+
+        <body>  
+            <header>
+                <H2> Laboratorio 4 <br>
+                    Fundamentos de JavaScript <br>
+                </H2>
+            </header>
+            
+    
+            <div id = "Datos">
+                Nombre: Monserrat Karime Moreno Casas <br>
+                Edad: 19 años <br>
+                Matricula : A01276775 <br>
+                Semestre: 4to<br> 
+                Correo electrónico: A01276775@tec.mx<br>
+            </div>
+
+
+            <div id = "EjerciciosJava">
+                <h2> Ejercicios JavaScript</h2>
+
+                <select id ="select" onchange ="Opcion()">
+                    <option value = "0" selected> --selección-- </option>
+                    <option value = "1"> Ejercicio 1 </option>
+                    <option value = "2"> Ejercicio 2 </option>
+                    <option value = "3"> Ejercicio 3 </option>
+                    <option value = "4"> Ejercicio 4 </option>
+                    <option value = "5"> Ejercicio 5 </option>
+                    <option value = "6"> Ejercicio 6 </option>
+                </select>
+            </div>
+
+ 
+            <div class="clearfix"></div>
+            <div id = "Preguntas">
+
+                <article class = "Pregunta">
+                    <h3> ¿Qué diferencias y semejanzas hay entre Java y JavaScript? </h3>
+                    Diferencias:
+                    <ul>
+                        <li>Java es un lenguaje de programación orientado a objetos puros <br> JavaScript se basa en prototipos y emula la programacion ortientada objetos</li>
+                        <li>Java tiene variables definidas, JavaScript es un lenguaje mas fexible</li>
+                        <li>Java fuertemente tipado, JavaScript debilmente tipado</li>
+                        <li></li>
+                    </ul>
+                    Semejanzas 
+                    <ul>
+                        <li>Provienen de C</li>
+                        <li>Ambos trabajan POO</li>
+                    </ul>
+                    
+                </article>
+
+                <article class = "Pregunta">
+                    <h3> ¿Qué métodos tiene el objeto Date? (Menciona al menos 5*) </h3>
+                    <ul>
+                        <li><strong> getMonth() </strong> devuelve el numero del mes (inicia desde 0)</li>
+                        <li><strong> getDate() </strong> devuelve el dia del mes (inicia desde 0)</li>
+                        <li><strong> getDay() </strong> devuelve el dia de la semana (inicia desde 0)</li>
+                        <li><strong> getHours() </strong> devuelve la hora actual (inicia desde 0, formato 24hr)</li>
+                        <li><strong> getMinutes() </strong> devuelve el numero del mes (inicia desde 0)</li>
+                    </ul>
+                </article>
+
+                <article class = "Pregunta">
+                    <h3> ¿Qué métodos tienen los arreglos? (Menciona al menos 5*) </h3>
+                    <ul>
+                        <li><strong> lenght() </strong> regresa la longitud del arreglo </li>
+                        <li><strong> split() </strong> separa el arreglo por caractéres  </li>
+                        <li><strong> push() </strong> agrega un valor al arreglo </li>
+                        <li><strong> pop() </strong> elimina un valor del arreglo </li>
+                        <li><strong> sort() </strong> ordena el arreglo </li>
+                       
+                    </ul>
+                </article>
+
+                <article class = "Pregunta">
+                    <h3> ¿Cómo se declara una variable con alcance local dentro de una función? </h3>
+                    <p> Se declara con <em>let</em> </p>
+                </article>
+
+                <article class = "Pregunta">
+                    <h3> ¿Qué implicaciones tiene utilizar variables globales dentro de funciones? </h3>
+                    <p> Las variables globales son utilizadas, como su nombre lo dice, de manera global, es decir no existe ningun momento 
+                        de muerte para estas, pueden ser utilizadas en cualquier parte del código </p>
+                </article>
+
+            </div>
+
+                <div id = "Referencias" >
+                    <h1> Referencias: </h1>
+                    <ul>
+                        <li> Moreno, C. (2020, 15 enero). <em>  Funciones sobre arreglos que debes conocer en Javascript.  </em> Medium. <a href = "https://medium.com/@khriztianmoreno/funciones-sobre-arreglos-que-debes-conocer-en-javascript-bae9d9ff8e52"> https://medium.com/@khriztianmoreno/funciones-sobre-arreglos-que-debes-conocer-en-javascript-bae9d9ff8e52 </a></li>
+                        <li> Digital Learning. (2017, 12 mayo). <em>  Métodos del objeto Date | Digital Learning. Digital Learning | </em>   Formación online en Nuevas Tecnologías.  <a href = "https://www.digitallearning.es/intro-programacion-js/metodos-date.html"> https://www.digitallearning.es/intro-programacion-js/metodos-date.html </a></li>
+                        <li>  C. (2020, 10 marzo). <em> Java y JavaScript ¿En que se relacionan? </em>  Globalbit. <a href =  "https://www.globalbit.co/2020/03/04/java-y-javascript-en-que-se-relacionan/">  https://www.globalbit.co/2020/03/04/java-y-javascript-en-que-se-relacionan/</a></li>
+                        <li> HACK A BOSS. (s. f.).<em>¿Qué diferencias hay entre JavaScript y Java? | </em> Hack a Boss.  <a href = "https://www.hackaboss.com/blog/diferencias-javascript-java#:%7E:text=JavaScript%20y%20Java%20son%20lenguajes%20totalmente%20diferentes.&text=Java%20es%20un%20lenguaje%20de,organizaci%C3%B3n%20sin%20%C3%A1nimo%20de%20lucro.">https://www.hackaboss.com/blog/diferencias-javascript-java#:%7E:text=JavaScript%20y%20Java%20son%20lenguajes%20totalmente%20diferentes.&text=Java%20es%20un%20lenguaje%20de,organizaci%C3%B3n%20sin%20%C3%A1nimo%20de%20lucro.</a></li>
+                    </ul>
+                </div>
+
+                <script type = "text/javascript" src = "Ejercicios.js"></script>
+            <footer> Editor de html: Visual Studio Code <a href = "https://code.visualstudio.com/" > Link </a>  </footer>
+        </body>
+    </div>
+</html>
+
