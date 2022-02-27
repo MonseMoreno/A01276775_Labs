@@ -1,41 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href = "EstilosSobreMi.css"/>
-        <title> A01276775_Lab1 </title>
+
+  <head>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="lab6.css">
+    <!-- <link rel="stylesheet" href = "EstilosSobreMi.css"/> -->
+    <title> A01276775_Lab1 </title>
         
-    </head>
+  </head>
 
-    <body>
-        <header>
-            <H2> Laboratorio 6 <br>
-                Programación orientada a eventos <br>
-            </H2>
-        </header>
+  <body>
 
-        <div id = "Instrucciones">
-            Con JavaScript y HTML5 [y quizás CSS], desarrolla una página para validar passwords. La página debe tener una forma con 2 campos, el campo de password, y el campo de verificar password. Utiliza al máximo tu creatividad e ingeniería para que la página sea un validador de passwords de estado del arte, con la mejor experiencia para el usuario. <br>
-Con JavaScript y HTML5 [y quizás CSS], desarrolla una página para vender 3 productos de tu interés, con los precios y promociones a tu gusto. La página debe permitir al usuario escoger la cantidad de unidades de cada producto, y debe mostrar el precio total, el IVA que se está cargando, y toda la información que consideres pertinente para que la experiencia del usuario sea la mejor. La página debe validar los rangos de las unidades de cada producto.<br>
-[Opcional] Con JavaScript y HTML5 y CSS, desarrolla una página con alguna temática o problema de tu interés. La página debe contener una forma y debes realizar las validaciones necesarias. Después de validar la forma, la página debe desplegar información relacionada con los datos introducidos en la forma, es decir la solución del problema o información respectiva a los datos introducidos.<br>
+      <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s1">
+              <img src="monse.jpeg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col l12 s12>
+              <span class="black-text">
+                Nombre: Monserrat Karime Moreno Casas <br>
+                Edad: 19 años <br>
+                Matricula : A01276775 <br>
+                Semestre: 4to<br> 
+                Correo electrónico: A01276775@tec.mx<br>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header>
+          <H3> Laboratorio 6 <br>
+              Programación orientada a eventos <br>
+          </H3>
+      </header>
+
+
+      <div class="row">
+        <div  id = "Instrucciones"  class="col s12">
+            <H3>Instrucciones</H3>
+            1. Con JavaScript y HTML5 [y quizás CSS], desarrolla una página para validar passwords. La página debe tener una forma con 2 campos, el campo de password, y el campo de verificar password. Utiliza al máximo tu creatividad e ingeniería para que la página sea un validador de passwords de estado del arte, con la mejor experiencia para el usuario. <br><br>
+            2.Con JavaScript y HTML5 [y quizás CSS], desarrolla una página para vender 3 productos de tu interés, con los precios y promociones a tu gusto. La página debe permitir al usuario escoger la cantidad de unidades de cada producto, y debe mostrar el precio total, el IVA que se está cargando, y toda la información que consideres pertinente para que la experiencia del usuario sea la mejor. La página debe validar los rangos de las unidades de cada producto.<br><br>
+        </div>
+      </div>
+
+
+      <div class="row" >
+
+          <div id = "Pregunta1" onclick="Mostrar_pregunta()" class="col  m5 s12 offset-s4">
+              <a class="waves-effect waves-light btn-large yellow darken-2" > <i class="material-icons right"  >filter_1</i>Pregunta</a>
+          </div>
+
+          <div id = "Pregunta2"  class="col m4 s12 offset-s4">
+              <a class="waves-effect waves-light btn-large yellow darken-2" > <i class="material-icons right"  >filter_2</i>Pregunta</a>
+          </div>
+
+
+          <div id = "Pregunta3" class="col  m2 s12  offset-s4">
+              <a class="waves-effect waves-light btn-large yellow darken-2" > <i class="material-icons right"  >filter_3</i>Pregunta</a>
+          </div>
+
+      </div>
+
+      <div id = "Pregunta"> </div>
+
+      <div> </div>
+
+      <div> </div>
+
+      <div class="row">
+          <div class="row">
+              <div class="input-field col l3 m4 s12  " >
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="Usuario" type="text">
+                  <!-- <input id="Usuar" type="tel" class="validate"> -->
+                  <label for="Usuario">Usuario</label>
+              </div>
+          </div>
+
+          <div>  </div>
+
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col l3 m4 s12">
+                <i class="material-icons prefix">vpn_key</i>
+                <input id="Contraseña" type="password" >
+                
+                <label for="Contraseña">Contraseña</label>
+              </div>
+
+              <div class="input-field col l3 m4 s12">
+                <i class="material-icons prefix">vpn_key</i>
+                <input id="Verificar_contraseña" type="password">
+                <label for="Verificar_contraseña">Verifique contraseña</label>
+              </div>
+            </div>
+          </form>   
+          
+          <div class="input-field col S3" onclick="verificar_contraseña()">
+              <button class="btn waves-effect waves-light yellow darken-2" type="submit" name="action"  >verificar
+                  <i class="material-icons right">send</i>
+                </button>
+          </div>
+      </div>
+
+          
+      <div class="row"><div id = "Contraseña_verificada"></div></div>
+
+
+      <div class="row">
+        <div class="input-field col l3 m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="mochila1.jpg">
+              <span class="Mochila negra con blanco yellow darken-2">Mochila negra con blanco</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <H5 ><del style= "color:#FF0000">$580 MXN</del> $550 MXN </H5>
+            </div>
+            <div class="input-field col s12">
+              <select id = "cantidad_mochila_1" onchange = "Guardar_cantidad()">
+                <option value="0" disabled selected>Cantidad</option>
+                <option value="0"> 0</option>
+                <option value="1"> 1</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5</option>
+              </select>
+              <label>Cantidad de producto</label>
+          </div>
+          </div>
         </div>
 
-        <div id = "Preguntas">
+        <div class="input-field col l3 m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="mochila2.jpg">
+              <span class="Mochila negra con rosa yellow darken-2">   Mochila negra con rosa</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <H5 ><del style= "color:#FF0000">$580 MXN</del> $550 MXN </H5>
+            </div>
+            <div class="input-field col s12">
+              <select id = "cantidad_mochila_2"> 
+                <option value="0" disabled selected>Cantidad</option>
+                <option value="0"> 0</option>
+                <option value="1"> 1</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5</option>
+              </select>
+              <label>Cantidad de producto</label>
+          </div>
+          </div>
+        </div>
 
+        <div class="input-field col l3 m6 s12">
+            <div class="card">
+              <div class="card-image">
+                <img src="mochila3.jpg">
+                <span class="Mochila negra con amarillo yellow darken-2">Mochila negra con amarillo</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <H5>$500 MXN</H5>
+                
+              </div>
+              <div class="input-field col s12">
+                <select id = "cantidad_mochila_3">
+                  <option value="0" disabled selected>Cantidad</option>
+                  <option value="0"> 0</option>
+                  <option value="1"> 1</option>
+                  <option value="2"> 2</option>
+                  <option value="3"> 3</option>
+                  <option value="4"> 4</option>
+                  <option value="5"> 5</option>
+                </select>
+                <label>Cantidad de producto</label>
+            </div>
+          </div>
+        </div>
+    </div>
+
+        <div class="input-field col l3 m4 s12 " onclick="Calcular_precio()">
+          <button class="btn waves-effect waves-light yellow darken-2" type="submit" name="action"  > Realizar compra
+            <i class="material-icons right">shopping_cart</i>
+          </button>
+        </div>
             
-
-        </div>
-        <footer>
-
-        </footer> 
-    </body>
-
-
-
-
-
-
-
+        <div id = precio></div>
+        <div class="clearfix"></div>
+         <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            M.AutoInit();
+        </script>
+        <script type = "text/javascript" src = "java_lab6.js"></script>
+        <!-- <script> M.AutoInit(); </script> -->
+        <footer> Editor de html: Visual Studio Code <a href = "https://code.visualstudio.com/" > Link </a>  </footer> 
+  </body>
 
 </html>
+
+
