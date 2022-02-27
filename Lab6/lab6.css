@@ -1,7 +1,7 @@
 
 
 body{
-    background-color: rgb(255, 246, 198);
+    background-color: rgb(245, 247, 239);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -29,6 +29,23 @@ header{
 
 }
 
+
+.Descripcion_mochila1{
+    text-align: justify;
+    padding: 10px;
+}
+
+.Descripcion_mochila2{
+    text-align: justify;
+    padding: 10px;
+}
+
+.Descripcion_mochila3{
+    text-align: justify;
+    padding: 10px;
+}
+
+.Mochila negra con rosa yellow darken-2
 
 
 .clearfix{
