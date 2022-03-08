@@ -121,7 +121,7 @@ const server = http.createServer( (request, response) => {
 
 
         response.write('<footer> Editor de html: Visual Studio Code <a href = "https://code.visualstudio.com/" > Link </a> <br>  FrameWork: Bulma <a href = "https://bulma.io//" > Link </a> </footer> ');
-        response.write('</html> ');
+        response.write('</body> </html> ');
         
         response.end();
     }
