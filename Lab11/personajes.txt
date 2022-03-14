@@ -6,3 +6,4 @@ Mega Man
 Jinx
 Sonic 
 Kirby
+Lotus
