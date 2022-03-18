@@ -1,0 +1,50 @@
+
+
+<%- include('includes/head.ejs') %>
+
+
+        <!-- VIDEOJUEGOS -->
+   
+            <div class="Contenido ">
+                <h1>
+                    <FONT COLOR="purple">
+                        <center>VIDEOJUEGOS FAVORITOS DEL MES!!! </center>
+                </h1>
+                </FONT>
+                </h1>
+                <h5>Ingresa el tuyo!!</h5>
+            </div>
+            <% if (videojuegos.length > 0) { %>
+                <% for (let videojuego of videojuegos) { %>
+                    
+                <ul>
+                <li class="collection-item "> <%= videojuego.nombre_videojuego %></li>
+                </ul>
+            <% } %>
+            <a href="/favoritos/VideojuegoFavorito">
+                <button type="button" class="btn btn-outline-secondary purple lighten-4">Agregar mi videojuego favorito! </button>
+            </a>
+            <br>
+            <br>
+       
+    <% } else { %>
+        <h1>Esta página no contiene videojuegos aún :(.</h1>
+    <% } %> 
+
+
+        <!-- PERSONAJES DE VIDEOJUEGOS  -->
+
+
+
+
+
+
+
+
+        <!-- Aqui falta el cachito del block de notas  -->
+
+
+
+        </body>
+
+<%- include('includes/foot.ejs') %>

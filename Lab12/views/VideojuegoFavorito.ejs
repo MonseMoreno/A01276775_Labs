@@ -1,0 +1,25 @@
+<%- include('includes/head.ejs') %>
+
+<div class="Contenido ">
+    <h1>
+        <FONT COLOR="purple">
+            <center>VIDEOJUEGOS FAVORITOS DEL MES!!! </center>
+            </h1>
+        </FONT>
+        </h1>
+        <h4>Ingresa el tuyo!!</h4>
+        </div>
+        <form action="/favoritos/VideojuegoFavorito" method="POST">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Diablo III" <br><br <a href=""><input type="submit"
+                value="Enviar"></a>
+        </form>
+        <br>
+        <br>
+        <a href="/favoritos"><button type="button" class="btn btn-secondary purple lighten-3 ">Regresar a ver los videojuegos!!
+    </button> </a>
+</div>
+
+
+
+<%- include('includes/foot.ejs') %>
