@@ -37,8 +37,8 @@ LeerArchivos('comida.txt',comida);
 
 router.get('/NuevaComida', (request, response, next) => {
     console.log('GET /comida/NuevaComida');
-    let respuesta = ' <!DOCTYPE html> <html lang="es"> <head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> <title> A01276775_Lab10 </title> </head> <body> <header> <nav id = "navbar"> <div class="nav-wrapper">  <img src="https://cdn-icons-png.flaticon.com/512/2325/2325325.png" alt="" width="65" height="60" class="d-inline-block align-text-top" ></img> <ul id="nav-mobile" class="right hide-on-med-and-down"> <li> &nbsp Monserrat Karime Moreno Casas A01276775 &nbsp </li></ul></div></nav></header>';
-    respuesta += ' <div class="Contenido "> <h1><FONT COLOR="purple"><center>Mis comidas preferidas!! </center> </h1></FONT></h1> <h4>Ingresa el tuyo!!</h4></div> <form action="/comida/NuevaComida" method="POST"> <label for="nombre">Nombre: </label>  <input type="text" id="nombre" name="nombre" placeholder="Arroz" <br><br>  <a href=""><input type ="submit" value="Enviar"></a> </form> <br><br> <a href="/favoritos"><button type="button" class="btn btn-secondary purple lighten-3 ">Regresar a ver los videojuegos!! </button></a> </div> </body>  </html> ';
+    let respuesta = ' <!DOCTYPE html> <html lang="es"> <head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> <title> A01276775_Lab10 </title> </head> <body> <header> <nav id = "navbar"> <div class="nav-wrapper purple lighten-3">  <img src="https://cdn-icons-png.flaticon.com/512/2325/2325325.png" alt="" width="65" height="60" class="d-inline-block align-text-top" ></img> <ul id="nav-mobile" class="right hide-on-med-and-down"> <li> &nbsp Monserrat Karime Moreno Casas A01276775 &nbsp </li></ul></div></nav></header>';
+    respuesta += ' <div class="Contenido "> <h1><FONT COLOR="purple"><center>Mis comidas preferidas!! </center> </h1></FONT></h1> <h4>Ingresa el tuyo!!</h4></div> <form action="/comida/NuevaComida" method="POST"> <label for="nombre">Nombre: </label>  <input type="text" id="nombre" name="nombre" placeholder="Arroz" <br><br>  <a href=""><input type ="submit" value="Enviar"></a> </form> <br><br> <a href="/comida"><button type="button" class="btn btn-secondary purple lighten-3 ">Regresar a ver las comidas!! </button></a> </div> </body>  </html> ';
     response.send(respuesta); 
 });
 
@@ -60,12 +60,12 @@ router.post('/NuevaComida', (request, response, next) => {
 
 router.use('/', (request, response, next) => {
     console.log('Use Ruta /comida');
-    let respuesta = '<!DOCTYPE html> <html lang="es"> <head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> <title> A01276775_Lab10 </title> </head> <body> <header> <nav id = "navbar"> <div class="nav-wrapper ">  <img src="https://cdn-icons-png.flaticon.com/512/2325/2325325.png" alt="" width="65" height="60" class="d-inline-block align-text-top" > <ul id="nav-mobile" class="right hide-on-med-and-down"> <li> &nbsp Monserrat Karime Moreno Casas A01276775 &nbsp </li></ul></div></nav></header>';
-    respuesta += '<div class="Contenido "> <h1><FONT COLOR="blue"><center> Comidas favoritas! </center> </h1></FONT></h1> <h5>Ingresa el tuyo!!</h5></div>';
+    let respuesta = '<!DOCTYPE html> <html lang="es"> <head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> <title> A01276775_Lab10 </title> </head> <body> <header> <nav id = "navbar"> <div class="nav-wrapper purple lighten-4 ">  <img src="https://cdn-icons-png.flaticon.com/512/2325/2325325.png" alt="" width="65" height="60" class="d-inline-block align-text-top" > <ul id="nav-mobile" class="right hide-on-med-and-down"> <li> &nbsp Monserrat Karime Moreno Casas A01276775 &nbsp </li></ul></div></nav></header>';
+    respuesta += '<div class="Contenido "> <h1><FONT COLOR="purple"><center> Comidas favoritas! </center> </h1></FONT></h1> <h5>Ingresa tu comida favorita!!</h5></div>';
     for (let i in comida) {
         respuesta += '<li class="collection-item ">' + comida[i] + '</li>';
     } 
-    respuesta += '</ul> <a href="/comida/NuevaComida"><button type="button" class="btn btn-outline-secondary ">Agregar mi comida preferida! </button></a><br><br> ';
+    respuesta += '</ul> <a href="/comida/NuevaComida"><button type="button" class="btn btn-outline-secondary purple lighten-4 ">Agregar mi comida preferida! </button></a><br><br> ';
     response.send(respuesta); 
 });
 
