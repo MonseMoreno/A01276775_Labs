@@ -14,22 +14,25 @@
                 </h1>
                 <h5>Ingresa el tuyo!!</h5>
             </div>
-            <% if (videojuegos.length > 0) { %>
-                <% for (let videojuego of videojuegos) { %>
-                    
-                <ul>
-                <li class="collection-item "> <%= videojuego.nombre_videojuego %></li>
-                </ul>
-            <% } %>
-            <a href="/favoritos/VideojuegoFavorito">
-                <button type="button" class="btn btn-outline-secondary purple lighten-4">Agregar mi videojuego favorito! </button>
-            </a>
-            <br>
-            <br>
-       
-    <% } else { %>
-        <h1>Esta página no contiene videojuegos aún :(.</h1>
-    <% } %> 
+            <% if (videojuegos.length> 0) { %>
+                <% for (let videojuego of videojuegos) { %>ZXZZ
+            
+                    <ul>
+                        <li class="collection-item ">
+                            <%= videojuego.nombre_videojuego %>
+                        </li>
+                    </ul>
+                    <% } %>
+                        <a href="/favoritos/VideojuegoFavorito">
+                            <button type="button" class="btn btn-outline-secondary purple lighten-4">Agregar mi videojuego favorito!
+                            </button>
+                        </a>
+                        <br>
+                        <br>
+            
+                        <% } else { %>
+                            <h1>Esta página no contiene videojuegos aún :(.</h1>
+                            <% } %>
 
 
         <!-- PERSONAJES DE VIDEOJUEGOS  -->

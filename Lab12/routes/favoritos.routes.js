@@ -17,19 +17,19 @@ const videojuegos = [
 
 ];
 const personajes = [
-    {personajes: "Mario Bross"},
-    {personajes: "Kratos"},
-    {personajes: "Mega Man"},
-    {personajes: "Jinx"},
-    {personajes: "Sonic"}
+    {nombre_personaje: "Mario Bross"},
+    {nombre_personaje: "Kratos"},
+    {nombre_personaje: "Mega Man"},
+    {nombre_personaje: "Jinx"},
+    {nombre_personaje: "Sonic"}
     
 ];
 
 const comentarios = [
-    {comentarios: "La página es genial!! "},
-    {comentarios: "Aquí descubro nuevos videojuegos!!"},
-    {comentarios: "No me gusta, muy aburridos :/"},
-    {comentarios: "Ya puse los mios, espero les agraden ;"}
+    {texto_comentario: "La página es genial!! "},
+    {texto_comentario: "Aquí descubro nuevos videojuegos!!"},
+    {texto_comentario: "No me gusta, muy aburridos :/"},
+    {texto_comentario: "Ya puse los mios, espero les agraden ;"}
 
 ];
 
